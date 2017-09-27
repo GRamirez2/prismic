@@ -16,12 +16,16 @@
       $( document ).ready(function() {
         var Prismic = PrismicJS;
         
-        Prismic.getApi("https://your-repo-name.prismic.io/api/v2").then(function(api) {
-          return api.getByUID('page', 'get-started');
+        Prismic.getApi("https://test-site2.prismic.io/api/v2").then(function(api) {
+          // console.log("api", api)
+          return api.getByUID('home', 'george');
         }).then(function(document) {
-          $('#image').attr("src", document.data.image.url);
-          $('#title').html(PrismicDOM.RichText.asText(document.data.title));
-          $('#description').html(PrismicDOM.RichText.asHtml(document.data.description));
+          console.log("document", document)
+          console.log('title', document.data.title1[0].text)
+          // $('#image').attr("src", document.data.image.url);
+           $('#title').html(document.data.title1[0].text);
+          // $('#description').html(PrismicDOM.RichText.asHtml(document.data.description));
+          // $('#title').html(PrismicDOM.RichText.asText(document.tags[0]));
         });
       });
     </script>
