@@ -22,7 +22,7 @@
         }).then(function(document) {
           console.log("document", document)
           console.log('title', document.data.title1[0].text)
-          // $('#image').attr("src", document.data.image.url);
+           $('#image').attr("src", document.data.image_one.url);
            $('#title').html(document.data.title1[0].text);
           // $('#description').html(PrismicDOM.RichText.asHtml(document.data.description));
           // $('#title').html(PrismicDOM.RichText.asText(document.tags[0]));
