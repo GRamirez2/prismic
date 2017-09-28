@@ -19,6 +19,7 @@ $( document ).ready(function() {
     $(this).addClass("active");
   });
 
+  // logo click clears all links active status
   $('div a[href="#home"]').click(function(){
     $('ul li a').removeClass("active");
   })
