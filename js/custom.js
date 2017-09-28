@@ -12,4 +12,15 @@ $( document ).ready(function() {
     // $('#description').html(PrismicDOM.RichText.asHtml(document.data.description));
     // $('#title').html(PrismicDOM.RichText.asText(document.tags[0]));
   });
+
+  // nav bar selected page becomes active
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $('div a[href="#home"]').click(function(){
+    $('ul li a').removeClass("active");
+  })
+
 });

@@ -108,12 +108,12 @@
 <!-- Panel Top #05 -->
 <nav class="panel top forceMobileView white">
   <div class="sections desktop">
-    <div class="left"><a href="#home" title="Brand Name">
+    <div class="left"><a href="#home" title="logo">
       <!-- <svg style="width:107px;height:31px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg> -->
-      <img src="assets/img/livingConnectedLogo.png"/>
+      <img id="logo" src="assets/img/livingConnectedLogo.png"/>
     </a></div>
     <div class="right">
-      <ul class="menu crop">
+      <ul class="menu crop" id="menu-top">
         <li><a href="#services">Services</a></li>
         <li><a href="#registration">Self-Registration</a></li>
         <li><a href="#about">About</a></li>
@@ -201,7 +201,7 @@
                       <input class="pair " type="text" name="mobile number confirm" placeholder="Confirm" required/>
 
                       <div class="">
-                        <p class="terms-42 micro"><span class="opacity-5">By clicking <i>Text Me</i>, I agree to the Terms of Service and</span> <a href="#">Privacy&nbsp;Policy</a><span class="opacity-5">.</span></p>
+                        <p class="terms-42 micro"><span class="opacity-5">By clicking <i>Text Me</i>, I agree to the Terms of Service and</span> <a href="https://ccsmed.com/privacy" target="_blank">Privacy&nbsp;Policy</a><span class="opacity-5">.</span></p>
                       </div>
                       <input class="button cropBottom wide lcgreen " type="submit" name="submit" value="Text Me"/>
                     </form>
@@ -217,23 +217,7 @@
   </div>
 </section>
 
-<!-- Slide 2 (#42) -->
-<section class="slide whiteSlide" data-name="registration">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-      
-        
-        <div class="fix-10-12  center">
-            <h1 class="ae-1 huge lcText">Coming Soon</h1>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Slide 3 (#25) -->
+<!-- Slide 2 (#25) -->
 <section class="slide whiteSlide" data-name="services">
   <div class="content">
     <div class="container">
@@ -305,6 +289,22 @@
     </div>
   </div>
 </section>
+
+<!-- Slide 3 (#42) -->
+<section class="slide whiteSlide" data-name="registration">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+        
+          
+          <div class="fix-10-12  center">
+              <h1 class="ae-1 huge lcText">Coming Soon</h1>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- Slide 4 (#91) -->
 <section class="slide whiteSlide" data-name="about">
@@ -404,7 +404,7 @@
 </section>
 
 
-<!-- Slide 6 (#68) -->
+<!-- Slide 5 (#68) -->
 <section class="slide whiteSlide" data-name="partners">
   <div class="content">
     <div class="container">
@@ -559,6 +559,10 @@
         1-800-966-2046
     </a>
     </div>
+    <div class="center"><a href="mailto:LivingConnected@livingconnected.me?Subject=Question%20from %20website" target="_top" title="email" style="color:white;">
+        LivingConnected@livingconnected.me
+    </a>
+    </div>
     <div class="right">
       <ul class="menu crop uppercase">
         <!-- <li><a href="#">Tour</a></li>
@@ -570,11 +574,17 @@
     </div>
   </div>
   <div class="sections compact hidden">
-    <div class="right" style="color: white;"><a href="tel:1-800-966-2046" title="Brand Name">
-      <!-- <svg style="width:107px;height:31px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg> -->
+    <!-- Mobile Spce too small for both in footer -->
+    <!-- <div class="left">
+      <a href="mailto:LivingConnected@livingconnected.me?Subject=Question%20from %20website" target="_top" title="email" style="color:white;">
+        LivingConnected@livingconnected.me
+      </a>
+    </div> -->
+    <div class="right" style="color: white;">
+      <a href="tel:1-800-966-2046" title="Brand Name">
       1-800-966-2046
-    </a></div>
-    <!-- <div class="right"><span class="button actionButton sidebarTrigger blue" data-sidebar-id="2"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div> -->
+      </a>
+    </div>
   </div>
 </nav>
 

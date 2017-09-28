@@ -25,3 +25,11 @@
 .noPaddingLeft{
   padding-left: 0px;
 }
+
+#menu-top li a:hover{
+  color: #1B92D0;
+}
+
+.active{
+  color: #1B92D0;
+}
