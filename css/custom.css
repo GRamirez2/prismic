@@ -21,3 +21,7 @@
   background-color: #0F4C8C;
   color: white;
 }
+
+.noPaddingLeft{
+  padding-left: 0px;
+}
