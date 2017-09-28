@@ -30,7 +30,7 @@
 		<script src="js/custom.js" type="text/javascript" name="custom-scripts"></script>
 		 
 	</head>
-	<body class="slides animated">
+	<body class="slides animated smooth">
 		
 
 <!-- SVG Library -->
@@ -108,38 +108,40 @@
 <!-- Panel Top #05 -->
 <nav class="panel top forceMobileView white">
   <div class="sections desktop">
-    <div class="left"><a href="#" title="Brand Name">
+    <div class="left"><a href="#home" title="Brand Name">
       <!-- <svg style="width:107px;height:31px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg> -->
       <img src="assets/img/livingConnectedLogo.png"/>
     </a></div>
     <div class="right">
       <ul class="menu crop">
         <li><a href="#services">Services</a></li>
-        <li><a href="#">Self-Registration</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Partners</a></li>
+        <li><a href="#registration">Self-Registration</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#partners">Partners</a></li>
       </ul>
     </div>
   </div>
   <div class="sections compact hidden">
-    <div class="left"><a href="#" title="Brand Name">
+    <div class="left"><a href="#home" title="Brand Name">
       <!-- <svg style="width:107px;height:31px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg> -->
-      <img src="assets/img/livingConnectedLogo.png"/>
+      <img src="assets/img/livingConnectedLogo.png" style="width:200px;"/>
     </a></div>
     <div class="right"><span class="button actionButton sidebarTrigger white" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
   </div>
 </nav>
 
 <!-- Sidebar -->
-<nav class="sidebar grey" data-sidebar-id="1">
+<nav class="sidebar white" data-sidebar-id="1">
   <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
     <!-- <a href="#" title="Brand Name" class="logo"><svg width="120" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a> -->
-    <ul class="mainMenu uppercase">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#">Self-Registration</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Partners</a></li>
+    <img src="assets/img/livingConnectedLogo.png" style="width:200px;"/>
+    <ul class="mainMenu">
+      <li><p></p></li>
+      <li><a href="#services"><p class="lcText">Services</p></a></li>
+      <li><a href="#registration"><p class="lcText">Self-Registration</p></a></li>
+      <li><a href="#about"><p class="lcText">About</p></a></li>
+      <li><a href="#partners"><p class="lcText">Partners</p></a></li>
     </ul>
     <!-- <ul class="subMenu">
         <li><a href="#">Services</a></li>
@@ -157,7 +159,7 @@
 </nav>
 
 <!-- Slide 1 (#31) -->
-<section class="slide whiteSlide fromRight" data-name="services">
+<section class="slide whiteSlide fromRight" data-name="home">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -168,10 +170,10 @@
         </div> -->
         <div class="fix-12-12">
           <ul class="flex reverse">
-            <li class="col-6-12 left">
+            <li class="col-6-12 left lcText">
               <h1 class="ae-1 center">Living Connected</h1>
-              <h5 class="ae-1 center">FOR MEMBERS OF CCS MEDICAL'S MANAGED CARE PARTNERS</h5>
-              <div class="ae-2 center padding-top-4">
+              <h5 class="ae-1 center">FOR MEMBERS OF CCS MEDICAL'S MANAGED<br>CARE PARTNERS</h5>
+              <div class="ae-2 left padding-top-4">
                 <p>The LivingConnected program is a cellular-enabled mobile diabetes management program designed to give diabetes patients access to live monitoring and intervention when they have an adverse reading or trend in their blood sugar levels.</p>
               </div>
 
@@ -186,25 +188,25 @@
             <li class="col-6-12 left ae-1 fromRight">
               <!-- <img class="ipad-31" src="assets/img/ipad-31.png" width="1200" alt="iPad Image" data-action="zoom"/> -->
               <div class="fix-6-12 center">
-                  <div class="pad shadow selected left ae-3">
+                  <div class="pad shadow selected left ">
                     <form action="#" autocomplete="off" class="wide">
-                      <div class="ae-3 cropTop center"><h4>CONTACT ME</h4></div>
-                      <!-- <div class="label ae-3 cropTop"><label class="left cropTop center" for="name">CONTACT ME</label></div> -->
-                      <input class="wide ae-4" id="name" type="text" name="first name" placeholder="First Name" required/>
-                      <input class="wide ae-4" id="lastname" type="text" name="last name" placeholder="Last Name" required/>
-                      <!-- <input class="wide ae-4" id="lastname" type="email" name="mobile number" placeholder="Mobile Number" required/> -->
+                      <div class=" cropTop center"><h4>CONTACT ME</h4></div>
+                      <!-- <div class="label  cropTop"><label class="left cropTop center" for="name">CONTACT ME</label></div> -->
+                      <input class="wide " id="name" type="text" name="first name" placeholder="First Name" required/>
+                      <input class="wide " id="lastname" type="text" name="last name" placeholder="Last Name" required/>
+                      <!-- <input class="wide " id="lastname" type="email" name="mobile number" placeholder="Mobile Number" required/> -->
 
-                      <!-- <div class="label ae-5"><label class="left opacity-5" for="password42">Create Password</label></div> -->
-                      <input class="pair ae-6" id="password42" type="text" name="mobile number" placeholder="Mobile Number" required/>
-                      <input class="pair ae-6" type="text" name="mobile number confirm" placeholder="Confirm" required/>
+                      <!-- <div class="label "><label class="left opacity-5" for="password42">Create Password</label></div> -->
+                      <input class="pair " id="password42" type="text" name="mobile number" placeholder="Mobile Number" required/>
+                      <input class="pair " type="text" name="mobile number confirm" placeholder="Confirm" required/>
 
-                      <div class="ae-7">
+                      <div class="">
                         <p class="terms-42 micro"><span class="opacity-5">By clicking <i>Text Me</i>, I agree to the Terms of Service and</span> <a href="#">Privacy&nbsp;Policy</a><span class="opacity-5">.</span></p>
                       </div>
-                      <input class="button cropBottom wide lcgreen ae-9" type="submit" name="submit" value="Text Me"/>
+                      <input class="button cropBottom wide lcgreen " type="submit" name="submit" value="Text Me"/>
                     </form>
                   </div>
-                  <!-- <div class="ae-10"><p class="text-42 small opaque"><span class="opacity-5">Already have an account?</span><br><a href="#" class="bold">Sign In</a></p></div> -->
+                  <!-- <div class="0"><p class="text-42 small opaque"><span class="opacity-5">Already have an account?</span><br><a href="#" class="bold">Sign In</a></p></div> -->
               </div>
             </li>
           </ul>
@@ -216,27 +218,14 @@
 </section>
 
 <!-- Slide 2 (#42) -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide" data-name="registration">
   <div class="content">
     <div class="container">
       <div class="wrap">
       
-        <h1 class="ae-1">Create Account</h1>
-        <div class="fix-6-12 margin-top-3 center">
-          <div class="pad shadow selected left ae-3">
-            <form action="#" autocomplete="off" class="wide">
-              <div class="label ae-3 cropTop"><label class="left cropTop opacity-5" for="email42">Start with email address</label></div>
-              <input class="wide ae-4" id="email42" type="email" name="email" placeholder="Email address" required/>
-              <div class="label ae-5"><label class="left opacity-5" for="password42">Create Password</label></div>
-              <input class="pair ae-6" id="password42" type="password" name="password" placeholder="Password" required/>
-              <input class="pair ae-6" type="password" name="password" placeholder="Confirm" required/>
-              <div class="ae-7">
-                <p class="terms-42 micro"><span class="opacity-5">By clicking</span> <a href="#">Create Account</a><span class="opacity-5">, I agree to the Terms of Service and</span> <a href="#">Privacy&nbsp;Policy</a><span class="opacity-5">.</span></p>
-              </div>
-              <input class="button cropBottom wide pink ae-9" type="submit" name="submit" value="Start free trial"/>
-            </form>
-          </div>
-          <div class="ae-10"><p class="text-42 small opaque"><span class="opacity-5">Already have an account?</span><br><a href="#" class="bold">Sign In</a></p></div>
+        
+        <div class="fix-10-12  center">
+            <h1 class="ae-1 huge lcText">Coming Soon</h1>
         </div>
         
       </div>
@@ -245,22 +234,69 @@
 </section>
 
 <!-- Slide 3 (#25) -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide" data-name="services">
   <div class="content">
     <div class="container">
       <div class="wrap">
         
         <div class="fix-12-12">
-          <h1 class="huge ae-1 fromCenter">Design becomes your life</h1>
-          <div class="ae-3"><p class="margin-bottom-6">Published Designmodo, Photo Unsplash</p></div>
+          <!-- <h5 class=" ae-1 fromCenter">Design becomes your life</h5> -->
+          <div class="ae-3"><h2 class="margin-bottom-3 lcText">VALUE PROPOSITION</h2></div>
           <ul class="grid">
             <li class="col-6-12 left ae-5 fromLeft">
-              <p>I'm not like most designers, who have to set sail on an exotic getaway to get inspired. Most of the time, it's on my walk to work, or sitting in the subway and seeing something random or out of context.</p>
+              <p>I'm not like most designers, who have to set sail on an exotic getaway to get inspired. Most of the time, it's on my walk to work, or sitting in the subway and seeing something random or out of context. I'm not like most designers, who have to set sail on an exotic getaway to get inspired. Most of the time, it's on my walk to work, or sitting in the subway and seeing something random or out of context.</p>
               <p>Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. </p>
+            </li>
+            <li class="col-6-12">
+              <div class="sliderBox-83">
+                  <ul class="slider clickable ae-1 fromAbove" data-slider-id="83-2">
+                    <li class="selected">
+                        <div class="box-81 equalElement darkBlue left ae-3">
+                            <p class="light ae-5">Graphic Designers are idea embalmers, loving undertakers preserving bits of data like so many butterflies pinned to felt in a jewel box.</p>
+                            <div class="author-81">
+                              <p class="small bold ae-6">George Ramirez</p>
+                              <p class="small cropBottom ae-7">Web Developer @MSI</p>
+                            </div>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="box-81 equalElement darkBlue left ae-3">
+                          <p class="light ae-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie.</p>
+                          <div class="author-81">
+                            <p class="small bold ae-6">John Doe</p>
+                            <p class="small cropBottom ae-7">Some Guy</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-81 equalElement darkBlue left ae-3">
+                          <p class="light ae-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie.</p>
+                          <div class="author-81">
+                            <p class="small bold ae-6">Jane Doe</p>
+                            <p class="small cropBottom ae-7">Important Woman</p>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-81 equalElement darkBlue left ae-3">
+                            <p class="light ae-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie.</p>
+                            <div class="author-81">
+                              <p class="small bold ae-6">Jack Black</p>
+                              <p class="small cropBottom ae-7">Actor Man</p>
+                            </div>
+                          </div>
+                    </li>
+                  </ul>
+                  <ul class="controller dots ae-3 fromBottom" data-slider-id="83-2">
+                    <li class="dot selected"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                  </ul>
+                </div>
             </li>
             <li class="col-6-12 left ae-6 fromLeft">
               <p>Graphic design, which evokes the symmetria of Vituvius, the dynamic symmetry of Hambidge, the asymmetry of Mondrian; which is a good gestalt, generated by intuition or by computer, by invention or by a system of coordinates, is not good design if it does not communicate.</p>
-              <p>Space and light and order. Those are the things that men need just as much as they need bread or a place to sleep.</p>
             </li>
           </ul>
         </div>
@@ -271,36 +307,36 @@
 </section>
 
 <!-- Slide 4 (#91) -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide" data-name="about">
   <div class="content">
     <div class="container">
       <div class="wrap">
       
         <div class="fix-10-12 toCenter">
-          <div class="ae-1"><p class="hero margin-bottom-1">Case Study</p></div>
-          <h1 class="ae-1">Create your own visual style</h1>
-          <div class="ae-2"><p>However, I’ve always been more concerned with users. Programmers do their work but once, while users are saddled with it ever thereafter.</p></div>
+          
+          <h1 class="ae-1">Our Clinicians</h1>
+          <div class="ae-2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie..</p></div>
         </div>
         <div class="fix-12-12">  
           <ul class="flex fixedSpaces later left">
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <div class="button empty margin-bottom-2 videoThumbnail noShadow popupTrigger ae-3" data-popup-id="91-3"><img class="wide" src="assets/img/img-91-1.jpg" alt="Video Thumbnail"/></div>
-              <h3 class="ae-4">Inspiration</h3>
-              <div class="ae-5"><p class="small">We live in a society where everybody feels guilty.</p></div>
+                <a href="#" class="button empty margin-bottom-2 ae-3"><img class="wide" src="assets/img/img-91-4.jpg" alt="Image Thumbnail"/></a>
+              <h3 class="ae-4">Dr. Garcia</h3>
+              <div class="ae-5"><p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
             </li>
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
               <a href="#" class="button empty margin-bottom-2 ae-4"><img class="wide" src="assets/img/img-91-2.jpg" alt="Image Thumbnail"/></a>
-              <h3 class="ae-5">Creativity</h3>
+              <h3 class="ae-5">Dr. Fernandez</h3>
               <div class="ae-6"><p class="small">You don’t have to be “a creative” to be creative.</p></div>
             </li>
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
               <a href="#" class="button empty margin-bottom-2 ae-5"><img class="wide" src="assets/img/img-91-3.jpg" alt="Image Thumbnail"/></a>
-              <h3 class="ae-6">Fashion</h3>
+              <h3 class="ae-6">Dr. Gonzalez</h3>
               <div class="ae-7"><p class="small">There is no such thing as simple. Simple is hard.</p></div>
             </li>
             <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
               <a href="#" class="button empty margin-bottom-2 ae-6"><img class="wide" src="assets/img/img-91-4.jpg" alt="Image Thumbnail"/></a>
-              <h3 class="ae-7">Photography</h3>
+              <h3 class="ae-7">Dr. Lopez</h3>
               <div class="ae-8"><p class="small">Design makes what was once impossible possible.</p></div>
             </li>
           </ul>
@@ -310,22 +346,6 @@
     </div>
   </div>
 </section>
-
-<!-- Popup Video -->
-<div class="popup autoplay" data-popup-id="91-3">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <div class="embedVideo popupContent">
-            <iframe src="https://player.vimeo.com/video/101231747?color=ff0179&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Slide 5 (#92) -->
 <section class="slide whiteSlide">
@@ -366,139 +386,140 @@
 </section>
 
 <!-- Slide 6 (#68) -->
-<section class="slide whiteSlide">
+<section class="slide whiteSlide" data-name="partners">
   <div class="content">
     <div class="container">
       <div class="wrap">
       
         <div class="fix-10-12 toCenter">
-          <h1 class="ae-1">Our clients</h1>
-          <div class="ae-2"><p>Design is all around us, in our homes, in buildings, architecture, landscaping, products, movies, television, and much more.</p></div>
+          <h1 class="lcText">Our Partners</h1>
+          <!-- <div class="ae-2"><p>Design is all around us, in our homes, in buildings, architecture, landscaping, products, movies, television, and much more.</p></div> -->
         </div>
         <div class="fix-12-12">
           <!-- remove class tintLogos to disable color change of logo images -->
+          <!-- grid-68 allows the logos to get larger -->
           <ul class="flex grid-68 tintLogos equal">
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-3">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="89" src="assets/img/bbc.png" alt="BBC"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-4">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="115" src="assets/img/google.png" alt="Google"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-5">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="42" src="assets/img/apple.png" alt="Apple"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-6">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="124" src="assets/img/canon.png" alt="Canon"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-7">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="83" src="assets/img/nike.png" alt="Nike"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-8">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="153" src="assets/img/greenpeace.png" alt="Green Peace"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-3">
+              <div class="table wide equalElement">
                 <div class="cell">
                  <img width="125" src="assets/img/facebook.png" alt="Facebook"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-4">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="85" src="assets/img/audi.png" alt="Audi"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-5">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="52" src="assets/img/warner-bros.png" alt="Warner Bros"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-6">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="155" src="assets/img/microsoft.png" alt="Microsoft"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-7">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="116" src="assets/img/coca-cola.png" alt="Coca Cola"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-8">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="133" src="assets/img/reebok.png" alt="Reebok"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-3">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="67" src="assets/img/adidas.png" alt="Adidas"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-4">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="116" src="assets/img/vimeo.png" alt="Vimeo"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-5">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="74" src="assets/img/nbc.png" alt="NBC"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-6">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="127" src="assets/img/sony.png" alt="Sony"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-7">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="65" src="assets/img/playstation.png" alt="PlayStation"/>
                 </div>
               </div>
             </li>
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
-              <div class="table wide equalElement ae-8">
+              <div class="table wide equalElement">
                 <div class="cell">
                   <img width="125" src="assets/img/national-geographic.png" alt="National Geographic"/>
                 </div>
@@ -513,13 +534,10 @@
 </section>
 
 <!-- Panel Bottom #14 -->
-<nav class="panel bottom forceMobileView" style="background-color: #1B92D0;">
+<nav class="panel bottom lcFooter forceMobileView lcMobileFooter" style="background-color: #1B92D0;">
   <div class="sections desktop">
     <div class="left"><a href="#" title="Brand Name" style="color:white;">
-      <!-- <svg style="width:107px;height:31px">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-      </svg> -->
-      1-800-999-9999
+        1-800-966-2046
     </a>
     </div>
     <div class="right">
@@ -533,9 +551,9 @@
     </div>
   </div>
   <div class="sections compact hidden">
-    <div class="left"><a href="#" title="Brand Name">
+    <div class="right" style="color: white;"><a href="tel:1-800-966-2046" title="Brand Name">
       <!-- <svg style="width:107px;height:31px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg> -->
-      1-800-999-9999
+      1-800-966-2046
     </a></div>
     <!-- <div class="right"><span class="button actionButton sidebarTrigger blue" data-sidebar-id="2"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div> -->
   </div>

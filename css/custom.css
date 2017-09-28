@@ -2,3 +2,22 @@
 .lcgreen{
   background-color: #ACCF4D; 
 }
+
+.lcText{
+  color: #525252;
+}
+
+.lcFooter {
+  height: 50px;
+  padding-top: 12.6px;
+}
+
+.lcMobileFooter{
+  padding-top: 0px;
+}
+
+.darkBlue{
+  border-radius: 15px;
+  background-color: #0F4C8C;
+  color: white;
+}
