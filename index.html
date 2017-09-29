@@ -117,7 +117,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#registration">Self-Registration</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#partners">Partners</a></li>
+        <li><a href="https://lcrptdev.ccsmed.com" target="_blank">Partners</a></li>
       </ul>
     </div>
   </div>
@@ -141,7 +141,7 @@
       <li><a href="#services"><p class="lcText">Services</p></a></li>
       <li><a href="#registration"><p class="lcText">Self-Registration</p></a></li>
       <li><a href="#about"><p class="lcText">About</p></a></li>
-      <li><a href="#partners"><p class="lcText">Partners</p></a></li>
+      <li><a href="https://lcrptdev.ccsmed.com" target="_blank"><p class="lcText">Partners</p></a></li>
     </ul>
     <!-- <ul class="subMenu">
         <li><a href="#">Services</a></li>
@@ -163,24 +163,20 @@
   <div class="content">
     <div class="container">
       <div class="wrap">
-          
-        <!-- <div class="fix-12-12">
-            <h1 class="ae-1">Living Connected</h1>
-            <h3 class="ae-1">FOR MEMBERS OF CCS MEDICAL'S MANAGED CARE PARTNERS</h3>
-        </div> -->
+
         <div class="fix-12-12">
           <ul class="flex reverse ">
             <li class="col-6-12 left lcText padding-top-4">
-              <h1 class="ae-1 center">Living Connected</h1>
-              <h5 class="ae-1 center">FOR MEMBERS OF CCS MEDICAL'S MANAGED<br>CARE PARTNERS</h5>
+              <h1 class="ae-1 center" id="main_title"></h1>
+              <h5 class="ae-1 center" id="main_subtitle"></h5>
               <div class="ae-2 left padding-top-4">
-                <p>The LivingConnected program is a cellular-enabled mobile diabetes management program designed to give diabetes patients access to live monitoring and intervention when they have an adverse reading or trend in their blood sugar levels.</p>
+                <p id="main_text"></p>
               </div>
               <ul>
                 <li class="col-6-12">
                   <div class="ae-2 left">
-                    <h4>100,000 Readings Received to date</h4>
-                    <h4>5,000 Number of Clinical Triggers</h4>
+                    <h4 id="readings_description"></h4>
+                    <h4 id="triggers_description"></h4>
                   </div>
                 </li>
               </ul>
@@ -199,14 +195,17 @@
                   <div class="pad shadow selected left ">
                     <form action="#" autocomplete="off" class="wide">
                       <div class=" cropTop center"><h4>CONTACT ME</h4></div>
-                      <!-- <div class="label  cropTop"><label class="left cropTop center" for="name">CONTACT ME</label></div> -->
-                      <input class="wide " id="name" type="text" name="first name" placeholder="First Name" required/>
-                      <input class="wide " id="lastname" type="text" name="last name" placeholder="Last Name" required/>
-                      <!-- <input class="wide " id="lastname" type="email" name="mobile number" placeholder="Mobile Number" required/> -->
 
-                      <!-- <div class="label "><label class="left opacity-5" for="password42">Create Password</label></div> -->
-                      <input class="pair " id="password42" type="text" name="mobile number" placeholder="Mobile Number" required/>
+                      <div class="label cropTop"><label class="left cropTop" for="name">Date of Birth</label></div>
+                      <input class="wide " id="name" type="text" name="DOB" placeholder="11/11/1980" required/>
+
+                      <div class="label cropTop"><label class="left cropTop" for="name">Mobile Number</label></div>
+                      <input class="pair " id="mbilenumber1" type="text" name="mobile number" placeholder="512-867-5309" required/>
                       <input class="pair " type="text" name="mobile number confirm" placeholder="Confirm" required/>
+
+                      <div class="label cropTop"><label class="left cropTop" for="name">Employer Email</label></div>
+                      <input class="pair " id="email" type="text" name="email" placeholder="me@employer.com" required/>
+                      <input class="pair " type="text" name="email confirm" placeholder="Confirm" required/>
 
                       <div class="">
                         <p class="terms-42 micro"><span class="opacity-5">By clicking <i>Text Me</i>, I agree to the Terms of Service and</span> <a href="https://ccsmed.com/privacy" target="_blank">Privacy&nbsp;Policy</a><span class="opacity-5">.</span></p>
@@ -233,22 +232,22 @@
         
         <div class="fix-12-12">
           <!-- <h5 class=" ae-1 fromCenter">Design becomes your life</h5> -->
-          <div class="ae-3"><h2 class="margin-bottom-3 lcText">OUR SERVICES</h2></div>
+          <div class="ae-3"><h2 class="margin-bottom-3 lcText" id="services_main_title"></h2></div>
           <ul class="grid">
             <li class="col-6-12 left ae-5 fromLeft">
-              <p>I'm not like most designers, who have to set sail on an exotic getaway to get inspired. Most of the time, it's on my walk to work, or sitting in the subway and seeing something random or out of context. I'm not like most designers, who have to set sail on an exotic getaway to get inspired. Most of the time, it's on my walk to work, or sitting in the subway and seeing something random or out of context.</p>
-              <h4 class="margin-bottom-3 lcText">SERVICES HEADLINE TWO</h4>
-              <p>Designing is a matter of concentration. You go deep into what you want to do. It's about intensive research, really. The concentration is warm and intimate and like the fire inside the earth - intense but not distorted. </p>
+              <p id="services_main_paragraph_1"></p>
+              <h4 class="margin-bottom-3 lcText" id="services_main_title_2"></h4>
+              <p id="services_main_paragraph_2"></p>
             </li>
             <li class="col-6-12">
-              <div class="sliderBox-83">
-                  <ul class="slider clickable ae-1 fromAbove" data-slider-id="83-2">
-                    <li class="selected">
+              <div class="sliderBox-83" id="testimonial_box">
+                  <ul class="slider clickable ae-1 fromAbove" data-slider-id="83-2" id="testimonial_ul">
+                    <!-- <li class="selected" id="testimonial_li">
                         <div class="box-81 equalElement darkBlue left ae-3">
-                            <p class="light ae-5">Graphic Designers are idea embalmers, loving undertakers preserving bits of data like so many butterflies pinned to felt in a jewel box.</p>
+                            <p class="light ae-5" id="testimonial">Graphic Designers are idea embalmers, loving undertakers preserving bits of data like so many butterflies pinned to felt in a jewel box.</p>
                             <div class="author-81">
-                              <p class="small bold ae-6">George Ramirez</p>
-                              <p class="small cropBottom ae-7">Web Developer @MSI</p>
+                              <p class="small bold ae-6" id="testimonial_author">George Ramirez</p>
+                              <p class="small cropBottom ae-7" id="author_description">Web Developer @MSI</p>
                             </div>
                           </div>
                     </li>
@@ -278,19 +277,19 @@
                               <p class="small cropBottom ae-7">Actor Man</p>
                             </div>
                           </div>
-                    </li>
+                    </li> -->
                   </ul>
-                  <ul class="controller dots ae-3 fromBottom" data-slider-id="83-2">
-                    <li class="dot selected"></li>
+                  <ul class="controller dots ae-3 fromBottom" data-slider-id="83-2" id="testimonial_dots">
+                    <!-- <li class="dot selected"></li>
                     <li class="dot"></li>
                     <li class="dot"></li>
-                    <li class="dot"></li>
+                    <li class="dot"></li> -->
                   </ul>
                 </div>
             </li>
             <li class="col-6-12 left ae-6 fromLeft">
-                <h4 class="margin-bottom-3 lcText">SERVICES HEADLINE TWO</h4>
-              <p>Graphic design, which evokes the symmetria of Vituvius, the dynamic symmetry of Hambidge, the asymmetry of Mondrian; which is a good gestalt, generated by intuition or by computer, by invention or by a system of coordinates, is not good design if it does not communicate.</p>
+                <h4 class="margin-bottom-3 lcText" id="services_main_title_3"></h4>
+              <p id="services_main_paragraph_3"></p>
             </li>
           </ul>
         </div>
@@ -324,12 +323,12 @@
       
         <div class="fix-10-12 toCenter">
           
-          <h1 class="ae-1">Our Clinicians</h1>
-          <div class="ae-2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie..</p></div>
+          <h1 class="ae-1" id="about_title"></h1>
+          <div class="ae-2"><p id="about_subtitle"></p></div>
         </div>
         <div class="fix-12-12">
-          <ul class="grid grid-77 later equal left">
-              <li class="col-3-12">
+          <ul class="grid grid-77 later equal left" id="clinicianBox">
+              <!-- <li class="col-3-12">
                 <a href="#" class="box-77 ae-3 fromCenter">
                   <div class="thumbnail-77">
                     <img src="assets/img/inner-77-1.jpg" alt="Picture" class="wide"/>
@@ -404,9 +403,64 @@
                     </div>
                   </div>
                 </a>
-              </li>
+              </li> -->
             </ul>
         </div>
+
+        <!-- partner list -->
+
+        <div class="fix-10-12 toCenter padding-top-5">
+            <h1 class="lcText" id="partner_clients"></h1>
+            <!-- <div class="ae-2"><p>Design is all around us, in our homes, in buildings, architecture, landscaping, products, movies, television, and much more.</p></div> -->
+          </div>
+          <div class="fix-12-12">
+            <!-- remove class tintLogos to disable color change of logo images -->
+            <!-- grid-68 allows the logos to get larger -->
+            <ul class="flex grid-68 equal" id="partner_logos">
+              <!-- <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
+                <div class="table wide equalElement">
+                  <div class="cell">
+                    <img width="89" src="assets/img/bbc.png" alt="BBC"/>
+                  </div>
+                </div>
+              </li>
+              <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
+                <div class="table wide equalElement">
+                  <div class="cell">
+                    <img width="115" src="assets/img/google.png" alt="Google"/>
+                  </div>
+                </div>
+              </li>
+              <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
+                <div class="table wide equalElement">
+                  <div class="cell">
+                    <img width="42" src="assets/img/apple.png" alt="Apple"/>
+                  </div>
+                </div>
+              </li>
+              <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
+                <div class="table wide equalElement">
+                  <div class="cell">
+                    <img width="124" src="assets/img/canon.png" alt="Canon"/>
+                  </div>
+                </div>
+              </li>
+              <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
+                <div class="table wide equalElement">
+                  <div class="cell">
+                    <img width="83" src="assets/img/nike.png" alt="Nike"/>
+                  </div>
+                </div>
+              </li>
+              <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
+                <div class="table wide equalElement">
+                  <div class="cell">
+                    <img width="153" src="assets/img/greenpeace.png" alt="Green Peace"/>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+          </div>
                 
       </div>
     </div>
@@ -414,7 +468,7 @@
 </section>
 
 
-<!-- Slide 5 (#68) -->
+<!-- Slide 5 (#68)
 <section class="slide whiteSlide" data-name="partners">
   <div class="content">
     <div class="container">
@@ -422,12 +476,12 @@
       
         <div class="fix-10-12 toCenter">
           <h1 class="lcText">Our Partners</h1>
-          <!-- <div class="ae-2"><p>Design is all around us, in our homes, in buildings, architecture, landscaping, products, movies, television, and much more.</p></div> -->
+
         </div>
-        <div class="fix-12-12">
+        <div class="fix-12-12"> -->
           <!-- remove class tintLogos to disable color change of logo images -->
           <!-- grid-68 allows the logos to get larger -->
-          <ul class="flex grid-68 tintLogos equal">
+          <!-- <ul class="flex grid-68 tintLogos equal">
             <li class="col-2-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1">
               <div class="table wide equalElement">
                 <div class="cell">
@@ -555,12 +609,12 @@
               </div>
             </li>
           </ul>
-        </div>
+        </div> 
                 
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- Panel Bottom #14 -->
 <nav class="panel bottom lcFooter forceMobileView lcMobileFooter" style="background-color: #1B92D0;">
